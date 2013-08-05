@@ -3,8 +3,7 @@
 /****************************************************************************************
 *	This file displays the main page of the site
 *****************************************************************************************/
-require_once('outputFs.php');
-require_once('mainFunctions.php');
+require_once('includes.php');
 	
 dispHeader('Agrimi test page');
 dispFooter();
