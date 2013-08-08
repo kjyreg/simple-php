@@ -3,26 +3,95 @@
 /****************************************************************************************
 * This file contains the basic (plain html) functions
 *****************************************************************************************/
-
-require_once("includes.php");
-
-
-function dispHeader($header)
-{
+function dispHeader($header) {
+  global $FILE_VARS;
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Agrimi test page | <?php echo $header ?></title>
+<title>Agrimi test page | <?php echo $header; ?></title>
 <link href="css/reset.css" rel="stylesheet" media="screen">
-<link href=<?php echo $BS_CSS ?> rel="stylesheet" media="screen">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="<?php echo $FILE_VARS['bs-css']; ?>" rel="stylesheet" media="screen">
 </head>
-
 <body>
 
-<p> Test page of Agrimi Web Server </p>
+<div class="navbar">
+<div class="container">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="#">Title</a>
+  <div class="nav-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Dropdown header</li>
+          <li><a href="#">Separated link</a></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form pull-left" action="">
+      <input type="text" class="form-control col-lg-8" placeholder="Search">
+    </form>
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<br /> <br />
+
+<div class="dropdown">
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+    <li><a tabindex="-1" href="#">Action</a></li>
+    <li><a tabindex="-1" href="#">Another action</a></li>
+    <li><a tabindex="-1" href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+<?php
+}
+
+/************************************************
+* this function displays the footer that is included
+* in every webpage of the site.
+*************************************************/
+function dispFooter() {
+  global $FILE_VARS;
+?>
+
+<script type="text/javascript" src="<?php echo $FILE_VARS['jq']; ?>"></script>
+<script type="text/javascript" src="<?php echo $FILE_VARS['bs-js']; ?>"></script>
+<script type="text/javascript" src="<?php echo $FILE_VARS['rsp']; ?>"></script>
+<script type="text/javascript" src="<?php echo $FILE_VARS['bs-js-dd']; ?>"></script>
+</body>
+</html>
+
 <?php
 }
 
@@ -83,21 +152,5 @@ function dispStuffContent()
 <?php
 }
 
-/************************************************
-* this function displays the footer that is included
-* in every webpage of the site.
-*************************************************/
-function dispFooter()
-{
-?>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script> 
-<script type="text/javascript" src="js/jquery_003.js"></script> 
-<script type="text/javascript" src="js/jquery.js"></script>
-</body>
-</html>
-<?php
-}
 
 ?>

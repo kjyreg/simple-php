@@ -9,6 +9,9 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "latest"
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "respond": "latest",
+    "bootstrap-js-dropdown": "latest"
   }
 }

@@ -1,9 +1,5 @@
 <?php
 
-//including required files
-require_once('includes.php');
-
-
 function valid_email($address)
 {
   //elegxos ths metavlhths pou periexei to email tou xrhsth
