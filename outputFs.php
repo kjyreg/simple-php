@@ -15,12 +15,13 @@ function dispHeader($header)
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Agrimi test page | <?php echo $header ?></title>
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="css/reset.css" rel="stylesheet" media="screen">
+<link href=<?php echo $BS_CSS ?> rel="stylesheet" media="screen">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+
 <p> Test page of Agrimi Web Server </p>
 <?php
 }
