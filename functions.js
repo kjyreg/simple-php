@@ -71,3 +71,9 @@ function rtrim(str, chars) {
 	chars = chars || "\\s";
 	return str.replace(new RegExp("[" + chars + "]+$", "g"), "");
 }
+
+
+
+window.onload = function() {
+  $('.dropdown-toggle').dropdown()
+};

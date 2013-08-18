@@ -12,6 +12,7 @@ function dispHeader($header) {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Agrimi test page | <?php echo $header; ?></title>
 <link href="css/reset.css" rel="stylesheet" media="screen">
+<script src="functions.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="<?php echo $FILE_VARS['bs-css']; ?>" rel="stylesheet" media="screen">
 </head>
