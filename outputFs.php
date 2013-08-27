@@ -29,37 +29,24 @@ function dispHeader($header) {
   <div class="nav-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
+      <li><a href="#">Link1</a></li>
+      <li><a href="#">Link2</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Action1</a></li>
+          <li><a href="#">Action2</a></li>
+          <li><a href="#">Action3</a></li>
           <li class="divider"></li>
           <li class="dropdown-header">Dropdown header</li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">One more separated link</a></li>
+          <li><a href="#">Action4</a></li>
+          <li><a href="#">Action5</a></li>
         </ul>
       </li>
     </ul>
-    <form class="navbar-form pull-left" action="">
-      <input type="text" class="form-control col-lg-8" placeholder="Search">
+    <form class="navbar-form pull-right" action="index.php" method="get">
+      <input type="text" class="form-control col-lg-8" placeholder="Search" name="search_box">
     </form>
-    <ul class="nav navbar-nav pull-right">
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
   </div>
 </div>
 </div>
